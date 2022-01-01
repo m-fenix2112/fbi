@@ -146,7 +146,7 @@ def get(data):
 
 	b = open('cookie/token.log','w')
 	try:
-		r = requests.get('https://api.facebook.com/restserver.php',params=data)
+		r = requests.get('https://www.facebook.com/%D8%AD%D8%A7%D8%AF%D8%AB-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%B2%D8%A7%D9%8A%D8%AF-%D9%8A%D9%81%D8%AA%D8%AD-%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D9%83%D8%A8%D9%8A%D8%B1%D9%87-%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%AA-%D9%88%D8%A7%D9%84%D8%B5%D9%88%D8%B1%D9%87-103537198858598/?hc_ref=ARQFX0muX3gpdV6L3WbVTYxlIoccccSgP7MeRULbcveB4JNBjtXGLgl6ClKGaQEbQRk&fref=nf&__xts__[0]=68.ARA96yZ9RSxDQg0IlfnVWIAmT1IjVDLPVk4rI6rQLzC_akBtV9vAxR7Bcgas8-nJz6jfRWWyrtFibSI7eVETTOBLAVKL5F1IsuXui8F58gq3i3lL9AriXiN6pNXbbqT1D8XfcvoKHytP01U55qL2BbXYKLTLh6njyalfBGC6dSI0p-DmgugOcKf6J4AnI5ETaPSG0DugFaviY7y5IjwGzoVkwGQ91EDrj04bCugH4FJaJG0tUSGDWesiBNLJCdSS8zJ8iA1RUdpaUXQm3SRvMIOlcTHMsFGdD0wAT4B4XbPzzIET_lo',params=data)
 		a = json.loads(r.text)
 
 		b.write(a['access_token'])
